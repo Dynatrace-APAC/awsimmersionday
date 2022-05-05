@@ -86,7 +86,7 @@ Apply this deployment by typing in this command:
 kubectl apply -f ~/sockshop/manifests/sockshop-app/newbuilds/newbuild-quota.yml
 ```
 
-To apply the fix:
+To recover from the problem, apply a new yaml file:
 
 ```bash
 kubectl apply -f ~/sockshop/manifests/sockshop-app/newbuilds/newbuild-quota-fix.yml
