@@ -74,7 +74,7 @@ kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/port=8
 **What you will do:**
 - Configure Dynatrace for a custom alert
 - Trigger a deployment
-- Watch how DAVIS reduces MTTR for you
+- Watch how DAVIS reduces Mean-time-to-**Detect** for you
 
 ### Scenario
 - OCP platform administrators set a resource quota that your project (namespace) needs to comply with
