@@ -44,7 +44,7 @@ Production namespace
 kubectl delete pods --all -n production
 ```
 
-#Hands on 2
+# Hands on 2
 
 ### Commands to Annotate Prometheus exporter pods
 
