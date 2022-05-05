@@ -27,7 +27,7 @@ kubectl -n dynatrace wait pod --for=condition=ready -l internal.dynatrace.com/ap
 Apply the DynaKube custom resource
 
 ```bash
-kubectl apply -f DynaKube.yaml
+kubectl apply -f dynakube.yaml
 ```
 
 ### Commands to restart the Sockshop application
