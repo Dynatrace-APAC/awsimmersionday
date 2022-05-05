@@ -1,5 +1,11 @@
 # Hands on 1
 
+**Objective:** Rapid time to observability
+
+**What you will do:**
+- Deploy Dynatracec Operator
+- Deploy pre-configured Custome Resoruce yaml file in **Classic full stack** deployment mode 
+
 ### Commands to Deploy Dynatrace Operator
 
 Reference: [Set up Dynatrace on Red Hat OpenShift](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/openshift)
@@ -48,6 +54,12 @@ kubectl delete pods --all -n production
 
 # Hands on 2
 
+**Objective:** Bring context of kubernetes events, prometheus metrics in a click of a button
+
+**What you will do:**
+- Configure Dynatrace to collect kubernetes events
+- Annotate pods to scrape metrics from Prometheus exporters 
+
 ### Commands to Annotate Prometheus exporter pods
 
 ```bash
@@ -56,6 +68,13 @@ kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/port=8
 ```
 
 # Hands on 3
+
+**Objective:** Bring intelligence to use cases
+
+**What you will do:**
+- Configure Dynatrace for a custom alert
+- Trigger a deployment
+- Watch how DAVIS reduces MTTR for you
 
 ### Scenario
 - OCP platform administrators set a resource quota that your project (namespace) needs to comply with
