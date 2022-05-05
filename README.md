@@ -1,4 +1,4 @@
-#Hands on 1
+# Hands on 1
 
 ## Commands to Deploy Dynatrace Operator
 
