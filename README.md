@@ -1,6 +1,6 @@
 # Hands on 1
 
-## Commands to Deploy Dynatrace Operator
+### Commands to Deploy Dynatrace Operator
 
 Reference: [Set up Dynatrace on Red Hat OpenShift](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/openshift)
 
@@ -30,7 +30,7 @@ Apply the DynaKube custom resource
 kubectl apply -f DynaKube.yaml
 ```
 
-## Commands to restart the Sockshop application
+### Commands to restart the Sockshop application
 
 Dev namespace
 
@@ -46,7 +46,7 @@ kubectl delete pods --all -n production
 
 #Hands on 2
 
-## Commands to Annotate Prometheus exporter pods
+### Commands to Annotate Prometheus exporter pods
 
 ```bash
 kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/scrape=true
@@ -55,7 +55,7 @@ kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/port=8
 
 # Hands on 3
 
-## Scenario
+### Scenario
 - OCP platform administrators set a resource quota that your project (namespace) needs to comply with
 - Application team's responsibility to assign given resources to different microservices
 
