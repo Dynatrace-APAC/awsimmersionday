@@ -57,7 +57,7 @@ kubectl delete pods --all -n production
 **Objective:** Bring context of kubernetes events, prometheus metrics in a click of a button
 
 **What you will do:**
-- Configure Dynatrace to collect kubernetes events
+- Configure Dynatrace to collect kubernetes events (restart the pods in the **dev** namespace to see the events coming in)
 - Annotate pods to scrape metrics from Prometheus exporters 
 
 ### Commands to Annotate Prometheus exporter pods
