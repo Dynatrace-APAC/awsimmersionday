@@ -26,6 +26,8 @@ kubectl -n dynatrace wait pod --for=condition=ready -l internal.dynatrace.com/ap
 
 Apply the DynaKube custom resource
 
+Change to the direcotry where dynakube.yaml is saved in, then run
+
 ```bash
 kubectl apply -f dynakube.yaml
 ```
