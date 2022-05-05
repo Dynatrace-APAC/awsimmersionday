@@ -4,13 +4,13 @@
 
 **What you will do:**
 - Deploy Dynatracec Operator
-- Deploy pre-configured Custome Resoruce yaml file in **Classic full stack** deployment mode 
+- Deploy pre-configured Custome Resource yaml file in **Classic full stack** deployment mode 
 
 ### Commands to Deploy Dynatrace Operator
 
-Reference: [Set up Dynatrace on Red Hat OpenShift](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/openshift)
-
-[Classic Full Stack installation](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/openshift/set-up-ocp-monitoring)
+Reference:
+- [Set up Dynatrace on Red Hat OpenShift](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/openshift)
+- [Classic Full Stack installation](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/openshift/set-up-ocp-monitoring)
 
 Create a dynatrace namespace
 
@@ -30,7 +30,7 @@ Wait until Dynatrace Operator components finish initialization.
 kubectl -n dynatrace wait pod --for=condition=ready -l internal.dynatrace.com/app=webhook --timeout=300s
 ```
 
-Apply the DynaKube custom resource
+Apply the DynaKube custom resource. [Sample files here](https://dt-url.net/dynakube-samples)
 
 Change to the direcotry where dynakube.yaml is saved in, then run
 
