@@ -60,6 +60,28 @@ kubectl delete pods --all -n production
 - Configure Dynatrace to collect kubernetes events (restart the pods in the **dev** namespace to see the events coming in)
 - Annotate pods to scrape metrics from Prometheus exporters 
 
+### Kubernetes events
+
+Reference: [Kubernetes events](https://www.dynatrace.com/support/help/how-to-use-dynatrace/infrastructure-monitoring/container-platform-monitoring/kubernetes-monitoring/monitor-events-kubernetes)
+
+Command to get all kubernetes events
+
+```bash
+kubectl get events --all-namespaces
+```
+
+Command to get kubernetes events in dev namespace only
+
+```bash
+kubectl get events --all-namespaces --field-selector involvedObject.namespace=dev
+```
+
+Command to get kubernetes Warning events only
+
+```bash
+kubectl get events --all-namespaces --field-selector type=Warning
+```
+
 ### Commands to Annotate Prometheus exporter pods
 
 ```bash
@@ -74,7 +96,7 @@ kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/port=8
 **What you will do:**
 - Configure Dynatrace for a custom alert
 - Trigger a deployment
-- Watch how DAVIS reduces Mean-time-to-**Detect** for you
+- Watch how DAVIS reduces Mean-time-to-**Detect** (MTTD) for you
 
 ### Scenario
 - OCP platform administrators set a resource quota that your project (namespace) needs to comply with
