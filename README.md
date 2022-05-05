@@ -84,6 +84,8 @@ kubectl get events --all-namespaces --field-selector type=Warning
 
 ### Commands to Annotate Prometheus exporter pods
 
+Reference: [Annotate Prometheus exporter pods](https://www.dynatrace.com/support/help/how-to-use-dynatrace/infrastructure-monitoring/container-platform-monitoring/kubernetes-monitoring/monitor-prometheus-metrics#annotate-prometheus-exporter-pods)
+
 ```bash
 kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/scrape=true
 kubectl annotate po -n production --all --overwrite metrics.dynatrace.com/port=8080
